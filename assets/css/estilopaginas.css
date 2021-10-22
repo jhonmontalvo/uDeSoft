@@ -1,0 +1,31 @@
+html {
+    height: 100%;
+  }
+  body {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background: linear-gradient(hsl(240, 20%, 99%), #8aa1be);
+  }
+  
+  body a {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+    color: rgb(9, 32, 245);
+    
+  }
+
+  #head{
+    margin-top: 0ch;
+    background-color: aqua;
+    border: black;
+    border-width: 5ch;
+  }
+
+  #footer{
+    bottom: 50ch;
+    background-color: aqua;
+    border: black;
+    border-width: 5ch;
+  }

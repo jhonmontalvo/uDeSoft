@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--  <script src="./form.js"></script>-->
+    <script src="assets\js\login.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/estilopaginas.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <title>Registro</title>
+</head>
+<body>
+    <div id="page-wrapper2">
+        
+        <section id="header">
+            
+            <!-- Nav -->
+                    <nav id="nav">
+                        <ul>
+                            <li class="current"><a href="index.html">Inicio</a></li>
+                            <li>
+                                <a href="#">Cursos</a>
+                                <ul>
+                                    <li><a href="#">Phyton</a></li>
+                                    <li><a href="#">Java</a></li>
+                                    <li><a href="#">html</a></li>
+                                    <li><a href="#">JavaScript</a></li>
+                                    <li>
+                                        <a href="#">Frameworks</a>
+                                        <ul>
+                                            <li><a href="#">Django</a></li>
+                                            <li><a href="#">Spring</a></li>
+                                            <li><a href="#">React</a></li>
+                                            <li><a href="#">Laravel</a></li>
+                                            <li><a href="#">Angular</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">IDE</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a href="registro.html">Registro</a></li>
+                            <li><a href="login.html">login</a></li>
+                        </ul>
+                    </nav>
+        </section> 
+    </div> 
+
+<div class="container py-2">
+   
+    
+    <p class="lead2">Registrarse</p>
+    <form action="" name = "form-registro" id="form-registro"> 
+
+
+        <label for="usuario">Usuario: </label>
+        <input type="text" placeholder = "Ingrese el usuario" id="username" name = "username" required minlength="4" maxlength="30" value = "Jmontalvo1990">
+        <br>
+        <label for="correo">Correo: </label>
+        <input type="email" placeholder = "Ingrese su correo" id="correo" name ="correo" required value = "jhonmontalvo@hotmail.com">
+        <br>
+        <label for="clave">Clave: </label>
+        <input  type="new password" placeholder = "Ingrese la clave" id="contrasena" name="contrasena" required minlength="8" value = "Jm123456">
+        <br>
+        <label for="confirmarclave">Confirmar Clave</label>
+        <input type="current password" placeholder = "Ingrese nuevamente la clave" id="confirmarclave" name ="confirmarclave"required value = "Jm123456">
+        <br>
+
+        <!--input de tipo submit para ejecutar las funciones de JS -->
+        <!--BOTON PARA EL SPRINT 2 -->
+        <!--     <input type="submit" name="accion" value="Registrar" id="btn-submit-form" onclick="checkUsername(usuario.value); checkCorreo(correo.value);  checkContrasena(clave.value);return checkConfirmContrasena(clave.value,confirmarclave.value);">-->
+        <br>
+        <button id="boton" class="btn btn-succes" type="reset" onclick="agregarRegistro();">Registrarse</button>
+       
+        <!-- <input type="submit" name="accion" value="Registrar" id="btn-submit-form" onclick="agregarRegistro();">
+         <button id="boton" class="btn btn-succes" type="reset" onclick="filtrarCorreo(registros);">filtrar correos</button>
+        <button id="boton" class="btn btn-succes" type="reset" onclick="obtenerUsername(registros);">filtrar usuarios</button>-->
+        <br>
+    </form>
+
+</div>
+    
+    <div class="container">
+        <table class="table" id="tabla">
+            <thead class="thead-inverse">
+                <tr>
+                    <th>Usuario</th>
+                    <th>Correo</th>
+                    <th>Clave</th>
+                </tr>
+            </thead>
+          
+        </table>
+    </div>
+</body>
+
+
+</html>
