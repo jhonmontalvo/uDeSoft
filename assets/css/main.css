@@ -1569,7 +1569,7 @@ input, select, textarea {
 /* Box */
 
 	.box {
-		background: #ffffff;
+		background: #fafafa;
 		border-bottom: solid 1px #ccc;
 		padding: 2.75em 1.75em 2.75em 1.75em;
 	}
@@ -1580,6 +1580,7 @@ input, select, textarea {
 			left: 1.75em;
 			top: 1.75em;
 			margin: -4.5em 0 4.25em -3.5em;
+			
 		}
 
 		.box.post header {
@@ -1713,6 +1714,7 @@ input, select, textarea {
 			display: block;
 			width: 100%;
 			margin: 0 0 2em 0;
+			padding: 10%;
 		}
 
 		.image.left {
@@ -2266,7 +2268,7 @@ input, select, textarea {
 
 	#main {
 		position: relative;
-		background: #f7f7f7 url("images/bg02.png");
+		background: #f7f7f7 url("images/interlaced.png");
 		padding: 4em 0 4em 0;
 	}
 
